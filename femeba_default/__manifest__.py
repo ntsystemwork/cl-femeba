@@ -19,7 +19,7 @@
 
         # minimum modules for argentinian localizacion + utilities + fixes
         # si es enterprise poner standard_depends_ee si es community standard_depends_ce
-        'standard_depends_xx',
+        'standard_depends_ce',
 
         # utilitarios adicionales
         'backend_theme',
