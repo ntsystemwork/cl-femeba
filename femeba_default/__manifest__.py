@@ -37,14 +37,16 @@
     # Here begins docker-odoo-environment manifest
     # --------------------------------------------
 
-    # if Enterprise it installs in a different directory than community
-    'Enterprise': False,
-
     # port where odoo starts serving pages
     'port': '8069',
-
     'repos': [
-        {'usr': 'ntsystemwork', 'repo': 'cl-femeba', 'branch': '11.0'},
+        {'usr': 'ntsystemwork', 'repo': 'cl-femeba', 'branch': '11.0',
+         'ssh': True},
+        {'usr': 'ntsystemwork', 'repo': 'nt-addons', 'branch': '11.0',
+         'ssh': True},
+        {'usr': 'ntsystemwork', 'repo': 'medical', 'branch': '11.0',
+         'ssh': True},
+
         {'usr': 'jobiols', 'repo': 'odoo-addons', 'branch': '11.0'},
         {'usr': 'jobiols', 'repo': 'rafi16jan-backend-theme',
          'branch': '11.0'},
@@ -76,4 +78,3 @@
         {'name': 'aeroo', 'usr': 'adhoc', 'img': 'aeroo-docs'},
     ],
 }
-
