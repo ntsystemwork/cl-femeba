@@ -28,7 +28,7 @@
     "version": "1.0",
     'author': 'NT System Work',
     'version': '11.0.0.0.0',
-    "summary": """Adds stages for kanban view in events app.""",
+    "summary": """Adds stages for kanban view in events app""",
     "license": "AGPL-3",
     "depends": ['base', 'event'],
     "data": [
