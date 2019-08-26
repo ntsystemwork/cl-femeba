@@ -32,10 +32,10 @@
     "license": "AGPL-3",
     "depends": ['base', 'event'],
     "data": [
+        'security/ir.model.access.csv',
         'data/etapas_data.xml',
         'views/stages_view.xml',
-        'views/kanban.xml',
-        'security/ir.model.access.csv'
+        'views/kanban.xml'
     ],
     'qweb': [],
     "installable": True,
