@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <openerp>
+        <data noupdate='1'>
+        <record id='etapa_1' model='event.stage'>
+            <field name='nombre'>Interesados</field>
+            <field name='descripcion'>Primera etapa</field>
+            <field name='sequence'>0</field>
+        </record>
+        <record id='etapa_2' model='event.stage'>
+            <field name='nombre'>Reservas</field>
+            <field name='descripcion'>Segunda etapa</field>
+            <field name='sequence'>1</field>
+        </record>
+        <record id='etapa_3' model='event.stage'>
+            <field name='nombre'>Concurrentes</field>
+            <field name='descripcion'>Tercera etapa</field>
+            <field name='sequence'>2</field>
+        </record>
+        <record id='etapa_4' model='event.stage'>
+            <field name='nombre'>Operativa</field>
+            <field name='descripcion'>Cuarta etapa</field>
+            <field name='sequence'>3</field>
+        </record>
+        <record id='etapa_5' model='event.stage'>
+            <field name='nombre'>Cierre</field>
+            <field name='descripcion'>Quinta etapa</field>
+            <field name='sequence'>4</field>
+        </record>
+    </data>
+</openerp>

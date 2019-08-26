@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="stage_form" model="ir.ui.view">
+            <field name="name">event.stage.form</field>
+            <field name="model">event.stage</field>
+            <field name="arch" type="xml">
+                <form string="Crear Etapa">
+	                <sheet >
+	                    <group>
+	                        <field name="nombre"/>
+                            <field name="descripcion"/>
+                            <field name="sequence"/>
+                            <field name="fold"/>
+                            <field name="evento_ids" widget="many2many_tags"/>
+                        </group>
+	                </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="stage_tree" model="ir.ui.view">
+            <field name="name">event.stage.tree</field>
+            <field name="model">event.stage</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre"/>
+                    <field name="descripcion"/>
+                    <field name="sequence"/>
+                    <field name="fold"/>
+                    <field name="evento_ids" widget="many2many_tags"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_filter_stage" model="ir.ui.view">
+            <field name="name">event.stage.filter</field>
+            <field name="model">event.stage</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="nombre"/>
+                    <field name="descripcion"/>
+                    <field name="sequence"/>
+                    <field name="fold"/>
+                    <field name="evento_ids" widget="many2many_tags"/>
+                </search>
+            </field>
+        </record>
+
+         <record id="stage_action" model="ir.actions.act_window">
+            <field name="name">Etapas</field>
+            <field name="res_model">event.stage</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="stage_tree"/>
+        </record>
+
+        <menuitem name="Stages"
+            id="stages_view_root_sub_sub_menu"
+            parent="event.menu_event_configuration"
+            action="stage_action" />
+
+    </data>
+</odoo>
