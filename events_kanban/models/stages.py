@@ -7,7 +7,7 @@ from odoo import api, fields, models
 class EventsStages(models.Model):
     _name = "event.stage"
 
-    nombre = fields.Char(
+    name = fields.Char(
         size=30,
         string="Nombre de la etapa"
     )

@@ -8,7 +8,7 @@
                 <form string="Crear Etapa">
 	                <sheet >
 	                    <group>
-	                        <field name="nombre"/>
+	                        <field name="name"/>
                             <field name="descripcion"/>
                             <field name="sequence"/>
                             <field name="fold"/>
@@ -24,7 +24,7 @@
             <field name="model">event.stage</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="nombre"/>
+                    <field name="name"/>
                     <field name="descripcion"/>
                     <field name="sequence"/>
                     <field name="fold"/>
@@ -38,7 +38,7 @@
             <field name="model">event.stage</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="nombre"/>
+                    <field name="name"/>
                     <field name="descripcion"/>
                     <field name="sequence"/>
                     <field name="fold"/>

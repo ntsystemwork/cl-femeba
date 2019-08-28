@@ -6,7 +6,9 @@
         <field name="model">event.event</field>
         <field name="inherit_id" ref="event.view_event_kanban"/>
         <field name="arch" type="xml">
-
+            <xpath expr="//kanban[@class='o_event_kanban_view']" position="attributes">
+                <attribute name="default_group_by">stage_id</attribute>
+            </xpath>
             <xpath expr="//field[@name='user_id']" position="after">
                 <field name="stage_id"/>
             </xpath>

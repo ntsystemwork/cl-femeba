@@ -28,14 +28,16 @@
     "version": "1.0",
     'author': 'NT System Work',
     'version': '11.0.0.0.0',
-    "summary": """Adds stages for kanban view in events app""",
+    "summary": """Adds stages for kanban view in events app.""",
     "license": "AGPL-3",
     "depends": ['base', 'event'],
     "data": [
-        'security/ir.model.access.csv',
+        #'security/ir.model.access.csv',
         'data/etapas_data.xml',
         'views/stages_view.xml',
-        'views/kanban.xml'
+        'views/kanban.xml',
+        'views/events_creation_form.xml',
+        
     ],
     'qweb': [],
     "installable": True,
