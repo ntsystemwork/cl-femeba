@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="event_add_certification_fields" model="ir.ui.view">
+            <field name="name">Add certification fields</field>
+            <field name="model">event.event</field>
+            <field name="inherit_id" ref="event.view_event_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="before">
+                    <group>
+                        <field name="programa"/>
+                        <field name="cantidad_horas_online"/>
+                        <field name="cantidad_horas_presencial"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
