@@ -1,6 +1,6 @@
 from odoo import api, fields, models
 
-class Certification(models.Model):
+class EventEvent(models.Model):
     _inherit = "event.event"
 
     programa = fields.Text(string='Programa')

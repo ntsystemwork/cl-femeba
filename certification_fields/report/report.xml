@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<odoo>
+<data noupdate="0">
+
+    <record id="aeroo_event_certification_id" model="ir.actions.report">
+        <field name="name">Certificado</field>
+        <field name="type">ir.actions.report</field>
+        <field name="model">event.event</field>
+        <field name="report_name">event_certification</field>
+        <field name="report_type">aeroo</field>
+        <field name="in_format">oo-odt</field>
+        <field name="print_logo">company_logo</field>
+        <field name="binding_model_id" ref="event.model_event_event"/>
+        <field name="parser_state">default</field>
+        <field name="report_file">certification_fields/report/certificado.odt</field>
+        <field name="tml_source">file</field>
+        <field name="background_image" type="base64" file="certification_fields/report/fondo.png"/>
+        <field name="use_background_image" eval="True"/>
+    </record>
+</data>
+</odoo>
+

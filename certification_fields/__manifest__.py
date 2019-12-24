@@ -30,12 +30,10 @@
     'version' : '11.0.0.0.0',
     "summary": """Campos de certificación""",
     "license": "AGPL-3",
-    "depends": ['base', 'event'],
+    "depends": ['base', 'event', 'report_aeroo'],
     "data": [
-
-        'views/certification.xml'
-
-
+        'views/certification.xml',
+        'report/report.xml',
     ],
     'qweb': [],
     "installable": True,
