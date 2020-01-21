@@ -37,7 +37,8 @@
         'views/stages_view.xml',
         'views/kanban.xml',
         'views/events_creation_form.xml',
-        
+        'views/event_templates.xml',
+
     ],
     'qweb': [],
     "installable": True,

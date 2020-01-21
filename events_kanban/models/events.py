@@ -25,3 +25,8 @@ class Event(models.Model):
         default=_get_default_stage_id,
         group_expand='_read_group_stage_ids',
     )
+
+class EventRegistration(models.Model):
+    _inherit = 'event.registration'
+
+    color = fields.Integer('Kanban Color Index')
