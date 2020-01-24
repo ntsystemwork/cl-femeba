@@ -20,7 +20,7 @@
             <field name="name">event.registration.kanban</field>
             <field name="model">event.registration</field>
             <field name="arch" type="xml">
-                <kanban class="o_event_kanban_view" default_group_by="state">
+                <kanban class="o_event_kanban_view" default_group_by="stage_id">
                     <field name="id"/>
                     <field name="name"/>
                     <field name="email"/>
@@ -75,6 +75,10 @@
 
         <record model="ir.actions.act_window" id="event.action_registration">
             <field name="view_mode">kanban,tree,form,calendar,pivot,graph</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="event.act_event_registration_from_event">
+            <field name="view_mode">kanban,tree,form,calendar,graph</field>
         </record>
 
 </odoo>
