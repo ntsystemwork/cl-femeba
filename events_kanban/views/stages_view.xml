@@ -49,7 +49,7 @@
         </record>
 
          <record id="stage_action" model="ir.actions.act_window">
-            <field name="name">Etapas</field>
+            <field name="name">Etapas de Eventos</field>
             <field name="res_model">event.stage</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -58,10 +58,25 @@
             <field name="domain">[('stage_type', '=', 'event')]</field>
         </record>
 
-        <menuitem name="Stages"
+        <menuitem name="Etapas de Eventos"
             id="stages_view_root_sub_sub_menu"
             parent="event.menu_event_configuration"
             action="stage_action" />
+
+         <record id="stage_action_asist" model="ir.actions.act_window">
+            <field name="name">Etapas de Asistentes</field>
+            <field name="res_model">event.stage</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="stage_tree"/>
+            <field name="context">{'default_stage_type': 'asist'}</field>
+            <field name="domain">[('stage_type', '=', 'asist')]</field>
+        </record>
+
+        <menuitem name="Etapas de Asistentes"
+            id="stages_view_root_sub_sub_menu_asist"
+            parent="event.menu_event_configuration"
+            action="stage_action_asist" />
 
     </data>
 </odoo>

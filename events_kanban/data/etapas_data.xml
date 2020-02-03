@@ -5,26 +5,49 @@
             <field name='name'>Interesados</field>
             <field name='descripcion'>Primera etapa</field>
             <field name='sequence'>0</field>
+            <field name="stage_type">event</field>
         </record>
         <record id='etapa_2' model='event.stage'>
             <field name='name'>Reservas</field>
             <field name='descripcion'>Segunda etapa</field>
             <field name='sequence'>1</field>
+            <field name="stage_type">event</field>
         </record>
         <record id='etapa_3' model='event.stage'>
             <field name='name'>Concurrentes</field>
             <field name='descripcion'>Tercera etapa</field>
             <field name='sequence'>2</field>
+            <field name="stage_type">event</field>
         </record>
         <record id='etapa_4' model='event.stage'>
             <field name='name'>Operativa</field>
             <field name='descripcion'>Cuarta etapa</field>
             <field name='sequence'>3</field>
+            <field name="stage_type">event</field>
         </record>
         <record id='etapa_5' model='event.stage'>
             <field name='name'>Cierre</field>
             <field name='descripcion'>Quinta etapa</field>
             <field name='sequence'>4</field>
+            <field name="stage_type">event</field>
+        </record>
+        <record id='etapa_asist_0' model='event.stage'>
+            <field name='name'>Interesados</field>
+            <field name='descripcion'>Primera etapa</field>
+            <field name='sequence'>0</field>
+            <field name="stage_type">asist</field>
+        </record>
+        <record id='etapa_asist_1' model='event.stage'>
+            <field name='name'>Documentación</field>
+            <field name='descripcion'>Segunda etapa</field>
+            <field name='sequence'>1</field>
+            <field name="stage_type">asist</field>
+        </record>
+        <record id='etapa_asist_2' model='event.stage'>
+            <field name='name'>Confirmados</field>
+            <field name='descripcion'>Tercera etapa</field>
+            <field name='sequence'>2</field>
+            <field name="stage_type">asist</field>
         </record>
     </data>
 </openerp>

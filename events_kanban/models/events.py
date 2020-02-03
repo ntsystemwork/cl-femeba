@@ -10,12 +10,14 @@ class Event(models.Model):
 
     def _get_default_stage_id(self):
         """ Gives default stage_id """
-        return self.env['event.stage'].search([('sequence', '=', '0')])
+        return self.env['event.stage'].search([('sequence', '=', '0'),
+                                               ('stage_type', '=', 'event')])
 
     @api.model
     def _read_group_stage_ids(self, stages, domain, order):
         search_domain = [('id', 'in', stages.ids)]
-        stage_ids = stages._search([], order=order, access_rights_uid=SUPERUSER_ID)
+        stage_ids = stages._search([('stage_type', '=', 'event')],
+                                   order=order, access_rights_uid=SUPERUSER_ID)
         return stages.browse(stage_ids)
 
     # group = fields.One2many("event.event", "stage_id", "Etapa")
@@ -31,12 +33,13 @@ class EventRegistration(models.Model):
 
     def _get_default_stage_id(self):
         """ Gives default stage_id """
-        return self.env['event.stage'].search([('sequence', '=', '0')])
+        return self.env['event.stage'].search([('sequence', '=', '0'), ('stage_type', '=', 'asist')])
 
     @api.model
     def _read_group_stage_ids(self, stages, domain, order):
         search_domain = [('id', 'in', stages.ids)]
-        stage_ids = stages._search([], order=order, access_rights_uid=SUPERUSER_ID)
+        stage_ids = stages._search([('stage_type', '=', 'asist')],
+                                   order=order, access_rights_uid=SUPERUSER_ID)
         return stages.browse(stage_ids)
 
     # group = fields.One2many("event.event", "stage_id", "Etapa")
