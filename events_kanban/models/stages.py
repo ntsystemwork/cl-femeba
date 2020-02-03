@@ -29,3 +29,6 @@ class EventsStages(models.Model):
         "event_id",
         string="Eventos"
     )
+    stage_type = fields.Selection(
+        [('event', 'event'),
+         ('asist', 'asist'),])

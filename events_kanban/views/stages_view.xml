@@ -13,6 +13,7 @@
                             <field name="sequence"/>
                             <field name="fold"/>
                             <field name="evento_ids" widget="many2many_tags"/>
+                            <field name="stage_type" invisible="1" />
                         </group>
 	                </sheet>
                 </form>
@@ -53,6 +54,8 @@
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="stage_tree"/>
+            <field name="context">{'default_stage_type': 'event'}</field>
+            <field name="domain">[('stage_type', '=', 'event')]</field>
         </record>
 
         <menuitem name="Stages"
