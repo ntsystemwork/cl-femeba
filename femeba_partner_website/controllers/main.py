@@ -20,6 +20,8 @@ class femebaPartnerWebsite(WebsiteSale):
         ]
 
     def _checkout_form_save(self, mode, checkout, all_values):
+        checkout['mobile'] = checkout['phone']
+        checkout['phone'] = False
         res = super(femebaPartnerWebsite, self)._checkout_form_save(
             mode=mode, checkout=checkout, all_values=all_values)
         return res
@@ -39,7 +41,7 @@ class femebaPartnerWebsite(WebsiteSale):
             Contacts.create({'name': data['name'],
                              'email': email,
                              'title_id': data['title'],
-                             'country_id': int(data['country_id']),
+                             'country_id': data['country_id'] and int(data['country_id']),
                              'list_ids': [(6, 0, [list_id.id])]})
         return True
 

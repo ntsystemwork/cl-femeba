@@ -29,7 +29,7 @@
                     <select id="title" name="title" class="form-control">
                             <option value="">Título...</option>
                             <t t-foreach="titles or []" t-as="t">
-                                <option t-att-value="t.id" t-att-selected="t.id == (title and title.id or -1)">
+                                <option t-att-value="t.id" t-att-selected="t.id == (title and title or -1)">
                                     <t t-esc="t.name"/>
                                 </option>
                             </t>
@@ -47,7 +47,7 @@
                     <select id="cargo_id" name="cargo_id" class="form-control">
                             <option value="">Cargo Actual...</option>
                             <t t-foreach="cargos or []" t-as="cargo">
-                                <option t-att-value="cargo.id" t-att-selected="cargo.id == (cargo_id and cargo_id.id or -1)">
+                                <option t-att-value="cargo.id" t-att-selected="cargo.id == (cargo_id and cargo_id or -1)">
                                     <t t-esc="cargo.name"/>
                                 </option>
                             </t>
@@ -59,7 +59,7 @@
                     <select id="especialidad_id" name="especialidad_id" class="form-control">
                             <option value="">Especialidad...</option>
                             <t t-foreach="especialidades or []" t-as="especialidad">
-                                <option t-att-value="especialidad.id" t-att-selected="especialidad.id == (especialidad_id and especialidad_id.id or -1)">
+                                <option t-att-value="especialidad.id" t-att-selected="especialidad.id == (especialidad_id and especialidad_id or -1)">
                                     <t t-esc="especialidad.name"/>
                                 </option>
                             </t>
@@ -95,7 +95,7 @@
                     <select  id="convenio_id" name="convenio_id" class="form-control">
                             <option value="">Convenio...</option>
                             <t t-foreach="convenios or []" t-as="convenio">
-                                <option t-att-value="convenio.id" t-att-selected="convenio.id == (convenio_id and convenio_id.id or -1)">
+                                <option t-att-value="convenio.id" t-att-selected="convenio.id == (convenio_id and convenio_id or -1)">
                                     <t t-esc="convenio.name"/>
                                 </option>
                             </t>
@@ -128,7 +128,7 @@
                     <select  id="main_id_category_id" name="main_id_category_id" class="form-control">
                             <option value="">Tipo de Documento...</option>
                             <t t-foreach="document_categories or []" t-as="document_category">
-                                <option t-att-value="document_category.id" t-att-selected="document_category.id == (main_id_category_id and main_id_category_id.id or -1)">
+                                <option t-att-value="document_category.id" t-att-selected="document_category.id == (main_id_category_id and main_id_category_id or -1)">
                                     <t t-esc="document_category.code"/>
                                 </option>
                             </t>
@@ -145,7 +145,7 @@
                     <select id="afip_responsability_type_id" name="afip_responsability_type_id" class="form-control">
                             <option value="">Tipo de Responsabilidad AFIP...</option>
                             <t t-foreach="afip_responsabilities or []" t-as="afip_type">
-                                <option t-att-value="afip_type.id" t-att-selected="afip_type.id == (afip_responsability_type_id and afip_responsability_type_id.id or -1)">
+                                <option t-att-value="afip_type.id" t-att-selected="afip_type.id == (afip_responsability_type_id and afip_responsability_type_id or -1)">
                                     <t t-esc="afip_type.name"/>
                                 </option>
                             </t>
