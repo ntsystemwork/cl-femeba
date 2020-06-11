@@ -24,14 +24,34 @@ class femebaPartnerWebsite(WebsiteSale):
             mode=mode, checkout=checkout, all_values=all_values)
         return res
 
+    def _add_to_newsletter(self, data):
+        email = data['email']
+        list_id = request.env['mail.mass_mailing.list'].sudo().search([('name', '=', 'Newsletter')])
+        Contacts = request.env['mail.mass_mailing.contact'].sudo()
+        name, email = Contacts.get_name_email(email)
+
+        contact_ids = Contacts.search([
+            ('list_ids', 'in', [int(list_id.id)]),
+            ('email', '=', email),
+        ], limit=1)
+        if not contact_ids:
+            # inline add_to_list as we've already called half of it
+            Contacts.create({'name': data['name'],
+                             'email': email,
+                             'title_id': data['title'],
+                             'country_id': int(data['country_id']),
+                             'list_ids': [(6, 0, [list_id.id])]})
+        return True
+
     def checkout_form_validate(self, mode, all_form_values, data):
-        print ('data', data)
+        if data['newsletter'] == 'si':
+            self._add_to_newsletter(data)
+
         if int(data['partner_id']) > 0:
             data['commercial_partner_id'] = data['partner_id']
         error, error_message = super(
             femebaPartnerWebsite, self).checkout_form_validate(
                 mode=mode, all_form_values=all_form_values, data=data)
-        print ('all_form_values', all_form_values)
         write_error, write_message = \
             request.env['res.partner'].sudo().try_write_commercial(
                 all_form_values)
@@ -69,7 +89,6 @@ class femebaPartnerWebsite(WebsiteSale):
         uid = request.session.uid or request.env.ref('base.public_user').id
         Partner = request.env['res.users'].browse(uid).partner_id
         Partner = Partner.with_context(show_address=1).sudo()
-        print ('\n\n\nPartner',Partner)
         response.qcontext.update({
             'document_categories': document_categories,
             'afip_responsabilities': afip_responsabilities,
@@ -107,8 +126,6 @@ class femebaPartnerWebsite(WebsiteSale):
         commercial_billing_fields = ["main_id_category_id", "main_id_number",
                                      "afip_responsability_type_id", 'title', 'cargo_id',
                                      'especialidad_id', 'university', 'entidad_id']
-        print ('commercial_billing_fields', commercial_billing_fields)
-        print ('mandatory_billing_fields', mandatory_billing_fields)
         for item in commercial_billing_fields:
             mandatory_billing_fields.pop(mandatory_billing_fields.index(item))
 

@@ -28,7 +28,6 @@ class ResPartner(models.Model):
         if title and cargo_id and especialidad_id and university and entidad:
             commercial_partner = self.env['res.partner'].sudo().browse(
                 int(data.get('commercial_partner_id', False)))
-            print ('commercial_partner femeba', commercial_partner)
             try:
                 values = {
                     'title': int(title),

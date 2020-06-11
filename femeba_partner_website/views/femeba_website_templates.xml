@@ -111,8 +111,8 @@
                 <div t-attf-class="form-group #{error.get('newsletter') and 'has-error' or ''} col-lg-12">
                     <label class="control-label" for="newsletter">Querés continuar recibiendo información de nuestra Oferta Educativa?</label>
                     <select  id="newsletter" name="newsletter" class="form-control">
-                            <option value="">Si</option>
-                            <option value="">No</option>
+                            <option value="si">Si</option>
+                            <option value="no">No</option>
                         </select>
                 </div>
 
