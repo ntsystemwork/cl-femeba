@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <function model="ir.model.fields" name="formbuilder_whitelist">
+        <value>res.partner</value>
+        <value eval="[
+            'main_id_category_id',
+            'main_id_number',
+            'afip_responsability_type_id',
+            'professional_registration',
+            'cargo_id',
+            'especialidad_id',
+            'university',
+            'organization',
+            'entidad_id',
+            'convenio_id',
+            'comment',
+            'title'
+        ]"/>
+    </function>
+</odoo>

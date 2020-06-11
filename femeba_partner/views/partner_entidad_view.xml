@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='partner_entidad_tree'>
+            <field name='name'>partner.entidad.tree</field>
+              <field name='model'>res.partner.entidad</field>
+              <field name='type'>tree</field>
+              <field name='arch' type='xml'>
+                  <tree>
+                    <field name="name"/>                 
+                  </tree>
+            </field>
+        </record>
+
+        <record id="view_form_partner_entidad" model="ir.ui.view">
+      <field name="name">Entidad Form</field>
+      <field name="model">res.partner.entidad</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group name="group_top">
+              <group name="group_left">
+                <field name="name" required="True" />
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    
+    <act_window id="action_partner_entidad" name="Entidades" res_model="res.partner.entidad" view_mode="tree,form"/>
+    <menuitem name="Entidades" id="entidad" action="action_partner_entidad" parent="contacts.res_partner_menu_config"/>
+
+    </data>
+</odoo>
+

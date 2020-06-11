@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_partner_cargo,access_partner_cargo,model_res_partner_cargo,base.group_user,1,1,1,1
+access_partner_convenio,access_partner_convenio,model_res_partner_convenio,base.group_user,1,1,1,1
+access_partner_entidad,access_partner_entidad,model_res_partner_entidad,base.group_user,1,1,1,1
+access_partner_especialidad,access_partner_especialidad,model_res_partner_especialidad,base.group_user,1,1,1,1

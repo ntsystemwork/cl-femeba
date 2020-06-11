@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <openerp>
+        <data noupdate='1'>
+        <record id='convenio1' model='res.partner.convenio'>
+            <field name='name'>CVPBA</field>
+        </record>
+        <record id='convenio2' model='res.partner.convenio'>
+            <field name='name'>FAC</field>
+        </record>
+        <record id='convenio3' model='res.partner.convenio'>
+            <field name='name'>ENDIBA</field>
+        </record>
+        <record id='convenio4' model='res.partner.convenio'>
+            <field name='name'>SOGBA</field>
+        </record>
+    </data>
+</openerp>

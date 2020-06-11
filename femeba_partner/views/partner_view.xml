@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="partner_form_view">
+        <field name="name">partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">   
+            <field name="category_id" position="after">
+                <field name="professional_registration"/>
+                <field name="cargo_id"/>
+                <field name="especialidad_id"/> 
+                <field name="university" /> 
+                <field name="organization"/>
+                <field name="entidad_id"/>   
+                <field name="convenio_id"/>       
+            </field> 
+        </field>
+        </record>
+    </data>
+</odoo>

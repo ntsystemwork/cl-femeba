@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="address" name="Address Management" inherit_id="website_sale.address">
+
+        <xpath expr="//label[@for='company_name']/.." position="replace">
+        </xpath>
+
+        <xpath expr="//input[@name='field_required']" position="before">
+            <t t-if="mode[1] == 'billing'">
+                <t t-set="main_id_category_id" t-value="'main_id_category_id' in checkout and checkout['main_id_category_id']"/>
+                <t t-set="main_id_number" t-value="'main_id_number' in checkout and checkout['main_id_number']"/>
+                <t t-set="afip_responsability_type_id" t-value="'afip_responsability_type_id' in checkout and checkout['afip_responsability_type_id']"/>
+                <t t-set="title" t-value="'title' in checkout and checkout['title']"/>
+                <t t-set="professional_registration" t-value="'professional_registration' in checkout and checkout['professional_registration']"/>
+                <t t-set="cargo_id" t-value="'cargo_id' in checkout and checkout['cargo_id']"/>
+                <t t-set="especialidad_id" t-value="'especialidad_id' in checkout and checkout['especialidad_id']"/>
+                <t t-set="university" t-value="'university' in checkout and checkout['university']"/>
+                <t t-set="organization" t-value="'organization' in checkout and checkout['organization']"/>
+                <t t-set="entidad_id" t-value="'entidad_id' in checkout and checkout['entidad_id']"/>
+                <t t-set="convenio_id" t-value="'convenio_id' in checkout and checkout['convenio_id']"/>
+                <t t-set="comment" t-value="'comment' in checkout and checkout['comment']"/>
+                <t t-set="newsletter" t-value="'newsletter' in checkout and checkout['newsletter']"/>
+                <div class="clearfix"/>
+                <h3>Datos Profesionales</h3>
+                <!-- agregamos title -->
+                <div t-attf-class="form-group #{error.get('title') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="title">Título</label>
+                    <select id="title" name="title" class="form-control">
+                            <option value="">Título...</option>
+                            <t t-foreach="titles or []" t-as="t">
+                                <option t-att-value="t.id" t-att-selected="t.id == (title and title.id or -1)">
+                                    <t t-esc="t.name"/>
+                                </option>
+                            </t>
+                        </select>
+                </div>
+                <!-- agregamos matricula profesional -->
+                <div t-attf-class="form-group #{error.get('professional_registration') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label label-optional" for="professional_registration">Matrícula Profesional</label>
+                    <input type="text" name="professional_registration" class="form-control" t-att-value="professional_registration" />
+                </div>
+                <div class="clearfix"/>
+                <!-- agregamos cargo_id -->
+                <div t-attf-class="form-group #{error.get('cargo_id') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="cargo_id">Cargo Actual</label>
+                    <select id="cargo_id" name="cargo_id" class="form-control">
+                            <option value="">Cargo Actual...</option>
+                            <t t-foreach="cargos or []" t-as="cargo">
+                                <option t-att-value="cargo.id" t-att-selected="cargo.id == (cargo_id and cargo_id.id or -1)">
+                                    <t t-esc="cargo.name"/>
+                                </option>
+                            </t>
+                    </select>
+                </div>
+                <!-- agregamos especialidad_id -->
+                <div t-attf-class="form-group #{error.get('especialidad_id') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="especialidad_id">Especialidad</label>
+                    <select id="especialidad_id" name="especialidad_id" class="form-control">
+                            <option value="">Especialidad...</option>
+                            <t t-foreach="especialidades or []" t-as="especialidad">
+                                <option t-att-value="especialidad.id" t-att-selected="especialidad.id == (especialidad_id and especialidad_id.id or -1)">
+                                    <t t-esc="especialidad.name"/>
+                                </option>
+                            </t>
+                        </select>
+                </div>
+                <div class="clearfix"/>
+                <!-- agregamos universidad -->
+                <div t-attf-class="form-group #{error.get('university') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="university">Universidad</label>
+                    <input type="text" name="university" class="form-control" t-att-value="university" />
+                </div>
+                <!-- agregamos organization -->
+                <div t-attf-class="form-group #{error.get('organization') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label label-optional" for="organization">Organización o Institución que representa</label>
+                    <input type="text" name="organization" class="form-control" t-att-value="organization" />
+                </div>
+                <div class="clearfix"/>
+                <!-- agregamos entidad_id -->
+                <div t-attf-class="form-group #{error.get('entidad_id') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="entidad_id">Si sos afiliado a FEMEBA por favor indicá a cuál Entidad Primaria</label>
+                    <select id="entidad_id" name="entidad_id" class="form-control">
+                            <option value="">Entidad...</option>
+                            <t t-foreach="entidades or []" t-as="entidad">
+                                <option t-att-value="entidad.id" t-att-selected="entidad.id == (entidad_id and entidad_id.id or -1)">
+                                    <t t-esc="entidad.name"/>
+                                </option>
+                            </t>
+                        </select>
+                </div>
+                <!-- agregamos convenio -->
+                <div t-attf-class="form-group #{error.get('convenio_id') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label label-optional" for="convenio_id">Si sos socio activo de alguna/as de estas instituciones, por favor indícanos a cuál</label>
+                    <select  id="convenio_id" name="convenio_id" class="form-control">
+                            <option value="">Convenio...</option>
+                            <t t-foreach="convenios or []" t-as="convenio">
+                                <option t-att-value="convenio.id" t-att-selected="convenio.id == (convenio_id and convenio_id.id or -1)">
+                                    <t t-esc="convenio.name"/>
+                                </option>
+                            </t>
+                        </select>
+                </div>
+                <div class="clearfix"/>
+                <!-- agregamos comment -->
+                <div t-attf-class="form-group #{error.get('comment') and 'has-error' or ''} col-lg-12">
+                    <label class="control-label label-optional" for="comment">Comentarios</label>
+                    <textarea type="text" name="comment" class="form-control" t-att-value="comment" />
+                </div>
+                <div class="clearfix"/>
+                <div t-attf-class="form-group #{error.get('newsletter') and 'has-error' or ''} col-lg-12">
+                    <label class="control-label" for="newsletter">Querés continuar recibiendo información de nuestra Oferta Educativa?</label>
+                    <select  id="newsletter" name="newsletter" class="form-control">
+                            <option value="">Si</option>
+                            <option value="">No</option>
+                        </select>
+                </div>
+
+
+
+
+                <div class="clearfix"/>
+                <h3>Datos de Facturación</h3>
+                <!-- agregamos document type -->
+                <div t-attf-class="form-group #{error.get('main_id_category_id') and 'has-error' or ''} col-lg-3">
+                    <label class="control-label" for="main_id_category_id">Tipo de Documento</label>
+                    <input name="commercial_partner_id" class="form-control" t-att-value="partner.commercial_partner_id.id" type="hidden" />
+                    <select  id="main_id_category_id" name="main_id_category_id" class="form-control">
+                            <option value="">Tipo de Documento...</option>
+                            <t t-foreach="document_categories or []" t-as="document_category">
+                                <option t-att-value="document_category.id" t-att-selected="document_category.id == (main_id_category_id and main_id_category_id.id or -1)">
+                                    <t t-esc="document_category.code"/>
+                                </option>
+                            </t>
+                        </select>
+                </div>
+                <!-- agregamos document number -->
+                <div t-attf-class="form-group #{error.get('main_id_number') and 'has-error' or ''} col-lg-3">
+                    <label class="control-label" for="main_id_number">Número de Documento</label>
+                    <input type="text" name="main_id_number" class="form-control" t-att-value="main_id_number" />
+                </div>
+                <!-- agregamos responsabilidad afiy type -->
+                <div t-attf-class="form-group #{error.get('afip_responsability_type_id') and 'has-error' or ''} col-lg-6">
+                    <label class="control-label" for="afip_responsability_type_id">Tipo de Responsabilidad AFIP</label>
+                    <select id="afip_responsability_type_id" name="afip_responsability_type_id" class="form-control">
+                            <option value="">Tipo de Responsabilidad AFIP...</option>
+                            <t t-foreach="afip_responsabilities or []" t-as="afip_type">
+                                <option t-att-value="afip_type.id" t-att-selected="afip_type.id == (afip_responsability_type_id and afip_responsability_type_id.id or -1)">
+                                    <t t-esc="afip_type.name"/>
+                                </option>
+                            </t>
+                    </select>
+                </div>
+                <div class="clearfix"/>
+            </t>
+        </xpath>
+
+        <!-- sacamos vat -->
+        <div t-attf-class="form-group #{error.get('vat') and 'has-error' or ''} col-md-6 div_vat" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </div>
+        <xpath expr="//label[@for='phone']" position="replace">
+            <label class="control-label" for="phone">Celular</label>
+        </xpath>
+        <xpath expr="//label[@for='street']" position="replace">
+            <label class="control-label" for="street">Dirección <span class="hidden-xs"> de facturación</span></label>
+        </xpath>
+        <xpath expr="//label[@for='street2']" position="replace">
+            <label class="control-label label-optional" for="street2">Entre Calles / Piso / Depto.</label>
+        </xpath>
+
+        <!-- mostramos negrita para zip
+        <t t-if="'zip' in zip_city and zip_city.index('zip') &lt; zip_city.index('city')" position="replace">
+            <t t-if="'zip' in zip_city and zip_city.index('zip') &lt; zip_city.index('city')" position="replace">
+                <div t-attf-class="form-group #{error.get('zip') and 'has-error' or ''} col-sm-4 div_zip">
+                    <label class="control-label" for="zip">Zip Code</label>
+                    <input type="text" name="zip" class="form-control" t-att-value="'zip' in checkout and checkout['zip']"/>
+                </div>
+            </t>
+        </t>
+        <t t-if="'zip' in zip_city and zip_city.index('zip') &gt; zip_city.index('city')" position="replace">
+            <t t-if="'zip' in zip_city and zip_city.index('zip') &gt; zip_city.index('city')" position="replace">
+                <div t-attf-class="form-group #{error.get('zip') and 'has-error' or ''} col-sm-4 div_zip">
+                    <label class="control-label" for="zip">Zip Code</label>
+                    <input type="text" name="zip" class="form-control" t-att-value="'zip' in checkout and checkout['zip']"/>
+                </div>
+            </t>
+        </t>-->
+    </template>
+
+</odoo>

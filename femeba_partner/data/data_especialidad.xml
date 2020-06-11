@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <openerp>
+        <data noupdate='1'>
+        <record id='Especialidad1' model='res.partner.especialidad'>
+            <field name='name'>Administración Sanitaria</field>
+        </record>
+        <record id='Especialidad2' model='res.partner.especialidad'>
+            <field name='name'>Alergia E Inmunologia</field>
+        </record>
+        <record id='Especialidad3' model='res.partner.especialidad'>
+            <field name='name'>Alergia Pediátrica</field>
+        </record>
+        <record id='Especialidad4' model='res.partner.especialidad'>
+            <field name='name'>Anatomía Patológica</field>
+        </record>
+        <record id='Especialidad5' model='res.partner.especialidad'>
+            <field name='name'>Anestesiología</field>
+        </record>
+        <record id='Especialidad6' model='res.partner.especialidad'>
+            <field name='name'>Angiologia General Y Hemodinamia</field>
+        </record>
+        <record id='Especialidad7' model='res.partner.especialidad'>
+            <field name='name'>Cardiología</field>
+        </record>
+        <record id='Especialidad8' model='res.partner.especialidad'>
+            <field name='name'>Cardiología Pediátrica</field>
+        </record>
+        <record id='Especialidad9' model='res.partner.especialidad'>
+            <field name='name'>Cardiologo Infantil</field>
+        </record>
+        <record id='Especialidad10' model='res.partner.especialidad'>
+            <field name='name'>Cirugia Cardiovascular</field>
+        </record>
+        <record id='Especialidad11' model='res.partner.especialidad'>
+            <field name='name'>Cirugía Cardiovascular</field>
+        </record>
+        <record id='Especialidad12' model='res.partner.especialidad'>
+            <field name='name'>Cirugía Cardiovascular Pediátrica</field>
+        </record>
+        <record id='Especialidad13' model='res.partner.especialidad'>
+            <field name='name'>Cirugía Colonproctológica</field>
+        </record>
+        <record id='Especialidad14' model='res.partner.especialidad'>
+            <field name='name'>Cirugía De Cabeza Y Cuello</field>
+        </record>
+        <record id='Especialidad15' model='res.partner.especialidad'>
+            <field name='name'>Cirugía De Tórax</field>
+        </record>
+        <record id='Especialidad16' model='res.partner.especialidad'>
+            <field name='name'>Cirugía Gastroenterológica</field>
+        </record>
+        <record id='Especialidad17' model='res.partner.especialidad'>
+            <field name='name'>Cirugia General</field>
+        </record>
+        <record id='Especialidad18' model='res.partner.especialidad'>
+            <field name='name'>Cirugia Infantil (Cirugia Pediatrica)</field>
+        </record>
+        <record id='Especialidad19' model='res.partner.especialidad'>
+            <field name='name'>Cirugía Pediátrica</field>
+        </record>
+        <record id='Especialidad20' model='res.partner.especialidad'>
+            <field name='name'>Cirugía Plástica Y Reparadora</field>
+        </record>
+        <record id='Especialidad21' model='res.partner.especialidad'>
+            <field name='name'>Cirugía Vascular Periférica</field>
+        </record>
+        <record id='Especialidad22' model='res.partner.especialidad'>
+            <field name='name'>Citología</field>
+        </record>
+        <record id='Especialidad23' model='res.partner.especialidad'>
+            <field name='name'>Clínica Médica</field>
+        </record>
+        <record id='Especialidad24' model='res.partner.especialidad'>
+            <field name='name'>Clínica Quirúrgica</field>
+        </record>
+        <record id='Especialidad25' model='res.partner.especialidad'>
+            <field name='name'>Coloproctologia</field>
+        </record>
+        <record id='Especialidad26' model='res.partner.especialidad'>
+            <field name='name'>Cuidados Paliativos</field>
+        </record>
+        <record id='Especialidad27' model='res.partner.especialidad'>
+            <field name='name'>Cuidados Paliativos Pediátricos</field>
+        </record>
+        <record id='Especialidad28' model='res.partner.especialidad'>
+            <field name='name'>Dermatología</field>
+        </record>
+        <record id='Especialidad29' model='res.partner.especialidad'>
+            <field name='name'>Dermatología Pediátrica</field>
+        </record>
+        <record id='Especialidad30' model='res.partner.especialidad'>
+            <field name='name'>Diabetología</field>
+        </record>
+        <record id='Especialidad31' model='res.partner.especialidad'>
+            <field name='name'>Diagnóstico Por Imágenes</field>
+        </record>
+        <record id='Especialidad32' model='res.partner.especialidad'>
+            <field name='name'>Diagnostico Por Imagenes Pediátrico</field>
+        </record>
+        <record id='Especialidad33' model='res.partner.especialidad'>
+            <field name='name'>Electrofisiología Cardíaca</field>
+        </record>
+        <record id='Especialidad34' model='res.partner.especialidad'>
+            <field name='name'>Emergentología</field>
+        </record>
+        <record id='Especialidad35' model='res.partner.especialidad'>
+            <field name='name'>Endocrinología</field>
+        </record>
+        <record id='Especialidad36' model='res.partner.especialidad'>
+            <field name='name'>Endocrinología Pediátrica</field>
+        </record>
+        <record id='Especialidad37' model='res.partner.especialidad'>
+            <field name='name'>Endocrinologo Infantil</field>
+        </record>
+        <record id='Especialidad38' model='res.partner.especialidad'>
+            <field name='name'>Farmacología Clínica</field>
+        </record>
+        <record id='Especialidad39' model='res.partner.especialidad'>
+            <field name='name'>Fertilidad</field>
+        </record>
+        <record id='Especialidad40' model='res.partner.especialidad'>
+            <field name='name'>Fisiatria (Medicina Fisica Y Rehabilitacion)</field>
+        </record>
+        <record id='Especialidad41' model='res.partner.especialidad'>
+            <field name='name'>Flebología</field>
+        </record>
+        <record id='Especialidad42' model='res.partner.especialidad'>
+            <field name='name'>Gastroenterología</field>
+        </record>
+        <record id='Especialidad43' model='res.partner.especialidad'>
+            <field name='name'>Gastroenterología Pediátrica</field>
+        </record>
+        <record id='Especialidad44' model='res.partner.especialidad'>
+            <field name='name'>Gastroenterologo Infantil</field>
+        </record>
+        <record id='Especialidad45' model='res.partner.especialidad'>
+            <field name='name'>Genética Humana</field>
+        </record>
+        <record id='Especialidad46' model='res.partner.especialidad'>
+            <field name='name'>Genetica Medica</field>
+        </record>
+        <record id='Especialidad47' model='res.partner.especialidad'>
+            <field name='name'>Geriatría</field>
+        </record>
+        <record id='Especialidad48' model='res.partner.especialidad'>
+            <field name='name'>Ginecología</field>
+        </record>
+        <record id='Especialidad49' model='res.partner.especialidad'>
+            <field name='name'>Ginecología Infanto Juvenil</field>
+        </record>
+        <record id='Especialidad50' model='res.partner.especialidad'>
+            <field name='name'>Hebiatría (Adolescencia)</field>
+        </record>
+        <record id='Especialidad51' model='res.partner.especialidad'>
+            <field name='name'>Hematología</field>
+        </record>
+        <record id='Especialidad52' model='res.partner.especialidad'>
+            <field name='name'>Hematología Pediátrica</field>
+        </record>
+        <record id='Especialidad53' model='res.partner.especialidad'>
+            <field name='name'>Hematologo Infantil</field>
+        </record>
+        <record id='Especialidad54' model='res.partner.especialidad'>
+            <field name='name'>Hemodinamia</field>
+        </record>
+        <record id='Especialidad55' model='res.partner.especialidad'>
+            <field name='name'>Hemoterapia</field>
+        </record>
+        <record id='Especialidad56' model='res.partner.especialidad'>
+            <field name='name'>Hemoterapia E Inmunohematologia </field>
+        </record>
+        <record id='Especialidad57' model='res.partner.especialidad'>
+            <field name='name'>Hepatología</field>
+        </record>
+        <record id='Especialidad58' model='res.partner.especialidad'>
+            <field name='name'>Hepatología Pediátrica</field>
+        </record>
+        <record id='Especialidad59' model='res.partner.especialidad'>
+            <field name='name'>Infectología</field>
+        </record>
+        <record id='Especialidad60' model='res.partner.especialidad'>
+            <field name='name'>Infectología Pediátrica</field>
+        </record>
+        <record id='Especialidad61' model='res.partner.especialidad'>
+            <field name='name'>Infectologo Infantil</field>
+        </record>
+        <record id='Especialidad62' model='res.partner.especialidad'>
+            <field name='name'>Inmunología</field>
+        </record>
+        <record id='Especialidad63' model='res.partner.especialidad'>
+            <field name='name'>Inmunología Pediátrica</field>
+        </record>
+        <record id='Especialidad64' model='res.partner.especialidad'>
+            <field name='name'>Mastología</field>
+        </record>
+        <record id='Especialidad65' model='res.partner.especialidad'>
+            <field name='name'>Medicina Del Deporte</field>
+        </record>
+        <record id='Especialidad66' model='res.partner.especialidad'>
+            <field name='name'>Medicina Del Trabajo </field>
+        </record>
+        <record id='Especialidad67' model='res.partner.especialidad'>
+            <field name='name'>Medicina Física Y De Rehabilitación</field>
+        </record>
+        <record id='Especialidad68' model='res.partner.especialidad'>
+            <field name='name'>Medicina General Y/O Familiar</field>
+        </record>
+        <record id='Especialidad69' model='res.partner.especialidad'>
+            <field name='name'>Medicina Legal</field>
+        </record>
+        <record id='Especialidad70' model='res.partner.especialidad'>
+            <field name='name'>Medicina Nuclear</field>
+        </record>
+        <record id='Especialidad71' model='res.partner.especialidad'>
+            <field name='name'>Medicina Sanitaria</field>
+        </record>
+        <record id='Especialidad72' model='res.partner.especialidad'>
+            <field name='name'>Micología</field>
+        </record>
+        <record id='Especialidad73' model='res.partner.especialidad'>
+            <field name='name'>Nefrología</field>
+        </record>
+        <record id='Especialidad74' model='res.partner.especialidad'>
+            <field name='name'>Nefrología Pediátrica</field>
+        </record>
+        <record id='Especialidad75' model='res.partner.especialidad'>
+            <field name='name'>Neonatología</field>
+        </record>
+        <record id='Especialidad76' model='res.partner.especialidad'>
+            <field name='name'>Neumonología</field>
+        </record>
+        <record id='Especialidad77' model='res.partner.especialidad'>
+            <field name='name'>Neumonología Pediátrica</field>
+        </record>
+        <record id='Especialidad78' model='res.partner.especialidad'>
+            <field name='name'>Neumonologo Infantil. </field>
+        </record>
+        <record id='Especialidad79' model='res.partner.especialidad'>
+            <field name='name'>Neurocirugía</field>
+        </record>
+        <record id='Especialidad80' model='res.partner.especialidad'>
+            <field name='name'>Neurología</field>
+        </record>
+        <record id='Especialidad81' model='res.partner.especialidad'>
+            <field name='name'>Neurología Pediátrica</field>
+        </record>
+        <record id='Especialidad82' model='res.partner.especialidad'>
+            <field name='name'>Neurologo Infantil.</field>
+        </record>
+        <record id='Especialidad83' model='res.partner.especialidad'>
+            <field name='name'>Nutrición</field>
+        </record>
+        <record id='Especialidad84' model='res.partner.especialidad'>
+            <field name='name'>Nutrición Pediátrica</field>
+        </record>
+        <record id='Especialidad85' model='res.partner.especialidad'>
+            <field name='name'>Obstetricia</field>
+        </record>
+        <record id='Especialidad86' model='res.partner.especialidad'>
+            <field name='name'>Oftalmología</field>
+        </record>
+        <record id='Especialidad87' model='res.partner.especialidad'>
+            <field name='name'>Oncología</field>
+        </record>
+        <record id='Especialidad88' model='res.partner.especialidad'>
+            <field name='name'>Oncología Pediátrica</field>
+        </record>
+        <record id='Especialidad89' model='res.partner.especialidad'>
+            <field name='name'>Oncologo Infantil.</field>
+        </record>
+        <record id='Especialidad90' model='res.partner.especialidad'>
+            <field name='name'>Ortopedia Y Traumatología</field>
+        </record>
+        <record id='Especialidad91' model='res.partner.especialidad'>
+            <field name='name'>Ortopedia Y Traumatología Infantil</field>
+        </record>
+        <record id='Especialidad92' model='res.partner.especialidad'>
+            <field name='name'>Otorrinolaringología</field>
+        </record>
+        <record id='Especialidad93' model='res.partner.especialidad'>
+            <field name='name'>Parasitología</field>
+        </record>
+        <record id='Especialidad94' model='res.partner.especialidad'>
+            <field name='name'>Patología Forense</field>
+        </record>
+        <record id='Especialidad95' model='res.partner.especialidad'>
+            <field name='name'>Pediatría</field>
+        </record>
+        <record id='Especialidad96' model='res.partner.especialidad'>
+            <field name='name'>Psiquiatría</field>
+        </record>
+        <record id='Especialidad97' model='res.partner.especialidad'>
+            <field name='name'>Psiquiatría Forense</field>
+        </record>
+        <record id='Especialidad98' model='res.partner.especialidad'>
+            <field name='name'>Psiquiatría Infanto-Juvenil</field>
+        </record>
+        <record id='Especialidad99' model='res.partner.especialidad'>
+            <field name='name'>Radiodiagnostico</field>
+        </record>
+        <record id='Especialidad100' model='res.partner.especialidad'>
+            <field name='name'>Radioterapia</field>
+        </record>
+        <record id='Especialidad101' model='res.partner.especialidad'>
+            <field name='name'>Reumatología</field>
+        </record>
+        <record id='Especialidad102' model='res.partner.especialidad'>
+            <field name='name'>Reumatología Pediátrica</field>
+        </record>
+        <record id='Especialidad103' model='res.partner.especialidad'>
+            <field name='name'>Reumatologo Infantil.</field>
+        </record>
+        <record id='Especialidad104' model='res.partner.especialidad'>
+            <field name='name'>Salud Pública</field>
+        </record>
+        <record id='Especialidad105' model='res.partner.especialidad'>
+            <field name='name'>Terapia Intensiva</field>
+        </record>
+        <record id='Especialidad106' model='res.partner.especialidad'>
+            <field name='name'>Terapia Intensiva Pediátrica</field>
+        </record>
+        <record id='Especialidad107' model='res.partner.especialidad'>
+            <field name='name'>Terapista Intensivo Infantil </field>
+        </record>
+        <record id='Especialidad108' model='res.partner.especialidad'>
+            <field name='name'>Tocoginecologia</field>
+        </record>
+        <record id='Especialidad109' model='res.partner.especialidad'>
+            <field name='name'>Toxicología</field>
+        </record>
+        <record id='Especialidad110' model='res.partner.especialidad'>
+            <field name='name'>Toxicología Médico Legal</field>
+        </record>
+        <record id='Especialidad111' model='res.partner.especialidad'>
+            <field name='name'>Tratamiento Del Dolor</field>
+        </record>
+        <record id='Especialidad112' model='res.partner.especialidad'>
+            <field name='name'>Traumatología Del Deporte</field>
+        </record>
+        <record id='Especialidad113' model='res.partner.especialidad'>
+            <field name='name'>Urología</field>
+        </record>
+        <record id='Especialidad114' model='res.partner.especialidad'>
+            <field name='name'>Virología</field>
+        </record>
+        <record id='Especialidad115' model='res.partner.especialidad'>
+            <field name='name'>OTRA</field>
+        </record>
+    </data>
+</openerp>

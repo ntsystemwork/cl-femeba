@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <openerp>
+        <data noupdate='1'>
+        <record id='entidad1' model='res.partner.entidad'>
+            <field name='name'>NO SOY AFILIADO</field>
+        </record>
+        <record id='entidad2' model='res.partner.entidad'>
+            <field name='name'>Agremiación Médica Berisso</field>
+        </record>
+        <record id='entidad3' model='res.partner.entidad'>
+            <field name='name'>Agremiación Médica Lanús</field>
+        </record>
+        <record id='entidad4' model='res.partner.entidad'>
+            <field name='name'>Agremiación Médica Magdalena</field>
+        </record>
+        <record id='entidad5' model='res.partner.entidad'>
+            <field name='name'>Agremiación Médica Tandil</field>
+        </record>
+        <record id='entidad6' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Adolfo Alsina</field>
+        </record>
+        <record id='entidad7' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Arrecifes</field>
+        </record>
+        <record id='entidad8' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Avellaneda</field>
+        </record>
+        <record id='entidad9' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Bahía Blanca</field>
+        </record>
+        <record id='entidad10' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Capitán Sarmiento</field>
+        </record>
+        <record id='entidad11' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Carlos Tejedor</field>
+        </record>
+        <record id='entidad12' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Coronel Brandsen</field>
+        </record>
+        <record id='entidad13' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Coronel Dorrego</field>
+        </record>
+        <record id='entidad14' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica del Noroeste</field>
+        </record>
+        <record id='entidad15' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica del Norte</field>
+        </record>
+        <record id='entidad16' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica del Salto</field>
+        </record>
+        <record id='entidad17' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica General Alvarado</field>
+        </record>
+        <record id='entidad18' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Gonzales Chaves</field>
+        </record>
+        <record id='entidad19' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Gremial Villarino</field>
+        </record>
+        <record id='entidad20' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Guiaminí</field>
+        </record>
+        <record id='entidad21' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Lobería</field>
+        </record>
+        <record id='entidad22' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Luján</field>
+        </record>
+        <record id='entidad23' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Mercedes</field>
+        </record>
+        <record id='entidad24' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Pergamino</field>
+        </record>
+        <record id='entidad25' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Pinamar</field>
+        </record>
+        <record id='entidad26' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Puán</field>
+        </record>
+        <record id='entidad27' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica Saavedra</field>
+        </record>
+        <record id='entidad28' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica San Miguel</field>
+        </record>
+        <record id='entidad29' model='res.partner.entidad'>
+            <field name='name'>Asociación Médica  San Vicente</field>
+        </record>
+        <record id='entidad30' model='res.partner.entidad'>
+            <field name='name'>Asociación de Médicos Coronel Rosales</field>
+        </record>
+        <record id='entidad31' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico 25 de Mayo</field>
+        </record>
+        <record id='entidad32' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico 9 de Julio</field>
+        </record>
+        <record id='entidad33' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Alberti</field>
+        </record>
+        <record id='entidad34' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Almirante Brown</field>
+        </record>
+        <record id='entidad35' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Ameghino</field>
+        </record>
+        <record id='entidad36' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Ayacucho</field>
+        </record>
+        <record id='entidad37' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Azul</field>
+        </record>
+        <record id='entidad38' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Baradero</field>
+        </record>
+        <record id='entidad39' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Berazategui</field>
+        </record>
+        <record id='entidad40' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Bolívar</field>
+        </record>
+        <record id='entidad41' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Bragado</field>
+        </record>
+        <record id='entidad42' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Campana</field>
+        </record>
+        <record id='entidad43' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Carlos Casares</field>
+        </record>
+        <record id='entidad44' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Carmen de Areco</field>
+        </record>
+        <record id='entidad45' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Carmen de Patagones</field>
+        </record>
+        <record id='entidad46' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Castelli</field>
+        </record>
+        <record id='entidad47' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Cañuelas</field>
+        </record>
+        <record id='entidad48' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Chacabuco</field>
+        </record>
+        <record id='entidad49' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Chascomús</field>
+        </record>
+        <record id='entidad50' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Chivilcoy</field>
+        </record>
+        <record id='entidad51' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Colón</field>
+        </record>
+        <record id='entidad52' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Coronel Pringles</field>
+        </record>
+        <record id='entidad53' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Coronel Suárez</field>
+        </record>
+        <record id='entidad54' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Daireaux</field>
+        </record>
+        <record id='entidad55' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico de la Costa y General Lavalle</field>
+        </record>
+        <record id='entidad56' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Dolores</field>
+        </record>
+        <record id='entidad57' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Escobar</field>
+        </record>
+        <record id='entidad58' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Exaltación de la Cruz</field>
+        </record>
+        <record id='entidad59' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Florencio Varela</field>
+        </record>
+        <record id='entidad60' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General Alvear</field>
+        </record>
+        <record id='entidad61' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General Arenales</field>
+        </record>
+        <record id='entidad62' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General Belgrano</field>
+        </record>
+        <record id='entidad63' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General Guido</field>
+        </record>
+        <record id='entidad64' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General La Madrid</field>
+        </record>
+        <record id='entidad65' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General Paz</field>
+        </record>
+        <record id='entidad66' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General Pinto</field>
+        </record>
+        <record id='entidad67' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General Rodríguez</field>
+        </record>
+        <record id='entidad68' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General Viamonte</field>
+        </record>
+        <record id='entidad69' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico General Villegas</field>
+        </record>
+        <record id='entidad70' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Hipólito Yrigoyen</field>
+        </record>
+        <record id='entidad71' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico José C. Paz</field>
+        </record>
+        <record id='entidad72' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Junín</field>
+        </record>
+        <record id='entidad73' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Juárez</field>
+        </record>
+        <record id='entidad74' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Laprida</field>
+        </record>
+        <record id='entidad75' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Las Flores</field>
+        </record>
+        <record id='entidad76' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Leandro N. Alem</field>
+        </record>
+        <record id='entidad77' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Lincoln</field>
+        </record>
+        <record id='entidad78' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Lobos</field>
+        </record>
+        <record id='entidad79' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Madariaga</field>
+        </record>
+        <record id='entidad80' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Maipú</field>
+        </record>
+        <record id='entidad81' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Malvinas Argentinas</field>
+        </record>
+        <record id='entidad82' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Mar Chiquita</field>
+        </record>
+        <record id='entidad83' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Merlo, Marco Paz y Las Heras</field>
+        </record>
+        <record id='entidad84' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Monte</field>
+        </record>
+        <record id='entidad85' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Moreno</field>
+        </record>
+        <record id='entidad86' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Navarro</field>
+        </record>
+        <record id='entidad87' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Necochea</field>
+        </record>
+        <record id='entidad88' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Olavarría</field>
+        </record>
+        <record id='entidad89' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Pehuajó</field>
+        </record>
+        <record id='entidad90' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Pellegrini</field>
+        </record>
+        <record id='entidad91' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Pilar</field>
+        </record>
+        <record id='entidad92' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Presidente Perón</field>
+        </record>
+        <record id='entidad93' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Quilmes</field>
+        </record>
+        <record id='entidad94' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Ramallo</field>
+        </record>
+        <record id='entidad95' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Rauch</field>
+        </record>
+        <record id='entidad96' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Regional Tres Arroyos</field>
+        </record>
+        <record id='entidad97' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Rivadavia</field>
+        </record>
+        <record id='entidad98' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Rojas</field>
+        </record>
+        <record id='entidad99' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Roque Pérez</field>
+        </record>
+        <record id='entidad100' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Saladillo</field>
+        </record>
+        <record id='entidad101' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Salliqueló</field>
+        </record>
+        <record id='entidad102' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico San Andrés de Giles</field>
+        </record>
+        <record id='entidad103' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico San Antonio de Areco</field>
+        </record>
+        <record id='entidad104' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico San Cayetano</field>
+        </record>
+        <record id='entidad105' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico San Nicolás</field>
+        </record>
+        <record id='entidad106' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico San Pedro</field>
+        </record>
+        <record id='entidad107' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Suipacha</field>
+        </record>
+        <record id='entidad108' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Tapalqué</field>
+        </record>
+        <record id='entidad109' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Tornquist</field>
+        </record>
+        <record id='entidad110' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Tres Lomas</field>
+        </record>
+        <record id='entidad111' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Verónica</field>
+        </record>
+        <record id='entidad112' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Villa Gesell</field>
+        </record>
+        <record id='entidad113' model='res.partner.entidad'>
+            <field name='name'>Círculo Médico Zárate</field>
+        </record>
+    </data>
+</openerp>

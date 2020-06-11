@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <openerp>
+        <data noupdate='1'>
+        <record id='cargo_1' model='res.partner.cargo'>
+            <field name='name'>Concurrente / Becario</field>
+        </record>
+        <record id='cargo_2' model='res.partner.cargo'>
+            <field name='name'>Residente 1° Año</field>
+        </record>
+        <record id='cargo_3' model='res.partner.cargo'>
+            <field name='name'>Residente 2° Año</field>
+        </record>
+        <record id='cargo_4' model='res.partner.cargo'>
+            <field name='name'>Residente 3° Año</field>
+        </record>
+        <record id='cargo_5' model='res.partner.cargo'>
+            <field name='name'>Residente 4° Año</field>
+        </record>
+        <record id='cargo_6' model='res.partner.cargo'>
+            <field name='name'>Residente 5° Año</field>
+        </record>
+        <record id='cargo_7' model='res.partner.cargo'>
+            <field name='name'>Jefe de Residentes</field>
+        </record>
+        <record id='cargo_8' model='res.partner.cargo'>
+            <field name='name'>Instructor de Residentes</field>
+        </record>
+        <record id='cargo_9' model='res.partner.cargo'>
+            <field name='name'>Fellow</field>
+        </record>
+        <record id='cargo_10' model='res.partner.cargo'>
+            <field name='name'>Especialista</field>
+        </record>
+        <record id='cargo_11' model='res.partner.cargo'>
+            <field name='name'>Otro</field>
+        </record>
+    </data>
+</openerp>
