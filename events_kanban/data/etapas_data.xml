@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
     <openerp>
         <data noupdate='1'>
-        <record id='etapa_1' model='event.stage'>
+        <!-- <record id='etapa_1' model='event.stage'>
             <field name='name'>Interesados</field>
             <field name='descripcion'>Primera etapa</field>
-            <field name='sequence'>0</field>
+            <field name='sequence'>4</field>
             <field name="stage_type">event</field>
         </record>
         <record id='etapa_2' model='event.stage'>
             <field name='name'>Reservas</field>
             <field name='descripcion'>Segunda etapa</field>
-            <field name='sequence'>1</field>
+            <field name='sequence'>5</field>
             <field name="stage_type">event</field>
-        </record>
+        </record> -->
         <record id='etapa_3' model='event.stage'>
             <field name='name'>Concurrentes</field>
             <field name='descripcion'>Tercera etapa</field>

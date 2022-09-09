@@ -11,7 +11,7 @@ class Event(models.Model):
     def _get_default_stage_id(self):
         """ Gives default stage_id """
         return self.env['event.stage'].search([('sequence', '=', '0'),
-                                               ('stage_type', '=', 'event')])
+                                               ('stage_type', '=', 'event')])[0]
 
     @api.model
     def _read_group_stage_ids(self, stages, domain, order):
